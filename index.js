@@ -61,12 +61,36 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+  const boxes = document.querySelectorAll('.box');
 
+  boxes.forEach((box, index) => {
+    box.addEventListener('mouseenter', () => {
+      box.classList.add('hovered');
+
+      if (boxes[index - 1]) {
+        boxes[index - 1].classList.add('left-neighbor');
+      }
+      if (boxes[index + 1]) {
+        boxes[index + 1].classList.add('right-neighbor');
+      }
+    });
+
+    box.addEventListener('mouseleave', () => {
+      box.classList.remove('hovered');
+
+      if (boxes[index - 1]) {
+        boxes[index - 1].classList.remove('left-neighbor');
+      }
+      if (boxes[index + 1]) {
+        boxes[index + 1].classList.remove('right-neighbor');
+      }
+    });
+  });
   document.querySelectorAll(".animate-on-scroll").forEach((el) => {
     el.classList.add("transition-all", "duration-700");
     observer.observe(el);
   });
-});
+})
   function showWarning(message) {
     let warningDiv = document.getElementById('antiInspectWarning');
     if (!warningDiv) {
@@ -109,3 +133,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   );
+  
