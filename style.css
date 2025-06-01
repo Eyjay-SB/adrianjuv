@@ -1,0 +1,104 @@
+.active-link {
+  color: #ff4d4d !important;
+}
+.stroke-text {
+  color: transparent;
+  -webkit-text-stroke: 1.5px white;
+  position: relative;
+  overflow: hidden;
+}
+
+.stroke-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  -webkit-text-stroke: 2px red;
+  mix-blend-mode: screen;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    red 50%,
+    transparent 70%
+  );
+  background-size: 200% 100%;
+  animation: slideRed 3s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  pointer-events: none;
+}
+
+@keyframes slideRed {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+.stroke-text {
+  color: transparent;
+  -webkit-text-stroke: 1.5px white;
+  position: relative;
+  overflow: hidden;
+}
+
+.stroke-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  -webkit-text-stroke: 2px red;
+  mix-blend-mode: screen;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    red 50%,
+    transparent 70%
+  );
+  background-size: 200% 100%;
+  animation: slideRed 3s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  pointer-events: none;
+}
+
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a0000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b0000;
+  border-radius: 6px;
+  border: 2px solid #1a0000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8b0000 #1a0000;
+}
+
+@keyframes slideRed {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

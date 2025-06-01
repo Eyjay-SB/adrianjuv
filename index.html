@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+    <title>Adrian Juv</title>
+    <link rel="icon" href="profile.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-gradient-to-b from-[#1a0000] via-[#330000] to-black text-white font-[Poppins] tracking-wide"
+  >
+    <nav
+      class="fixed top-5 left-1/2 transform -translate-x-1/2 w-3/4 md:w-2/4 lg:w-1/4 bg-gradient-to-b from-[#330000]/90 to-[#1a0000]/80 backdrop-blur-sm text-white rounded-2xl z-50"
+    >
+      <div class="px-4 py-3 flex justify-center items-center">
+        <ul
+          class="flex space-x-6 text-sm font-bold uppercase tracking-wider text-center"
+        >
+          <li>
+            <a
+              href="#about"
+              class="nav-link transition relative text-white hover:text-[#ff4d4d] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-0 hover:after:w-full after:h-[2px] after:bg-[#ff4d4d] after:transition-all after:duration-300"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="nav-link transition relative text-white hover:text-[#ff4d4d] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-0 hover:after:w-full after:h-[2px] after:bg-[#ff4d4d] after:transition-all after:duration-300"
+            >
+              Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="nav-link transition relative text-white hover:text-[#ff4d4d] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-0 hover:after:w-full after:h-[2px] after:bg-[#ff4d4d] after:transition-all after:duration-300"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="opacity-0 translate-y-6 transition-all duration-700 ease-out will-change-transform will-change-opacity w-11/12 lg:w-3/4 mx-auto pt-32 pb-20 bg-black"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-center gap-10"
+        >
+          <!-- ID Card Container -->
+          <div
+            class="animate-on-scroll relative bg-cover bg-center h-[300px] w-[300px] rounded-xl border-2 border-white shadow-[0_4px_15px_rgba(0,0,0,0.2)] p-5 text-white text-center font-[Poppins] flex flex-col items-center justify-center transform transition duration-500 ease-in-out hover:scale-105 hover:rotate-2 hover:shadow-[0_8px_25px_rgba(255,0,0,0.4)]"
+            style="background-image: url('id.png')"
+          >
+            <img
+              src="profile.png"
+              alt="Adrian Juv"
+              class="w-[90px] h-[90px] rounded-full border-2 border-white object-cover mb-5 shadow-[0_0_10px_rgba(255,255,255,0.3)]"
+            />
+            <h1 class="text-[15px] font-bold tracking-wide m-0">
+              Adrian Juv Sobrevega
+            </h1>
+            <p class="text-sm mt-2">BS - Information Technology</p>
+
+            <!-- Social Icons -->
+            <div class="flex space-x-6 mt-5">
+              <!-- Facebook -->
+              <a
+                href="https://facebook.com/adrianjuv"
+                target="_blank"
+                aria-label="Facebook"
+                class="hover:text-blue-500 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.877v-6.987H7.898v-2.89h2.54v-2.205c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.772-1.63 1.562v1.876h2.773l-.443 2.89h-2.33v6.987C18.343 21.128 22 16.991 22 12z"
+                  />
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a
+                href="https://instagram.com/eyjay_sb"
+                target="_blank"
+                aria-label="Instagram"
+                class="hover:text-pink-500 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zm8.5 1.5a1 1 0 110 2 1 1 0 010-2zm-4.25 2a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"
+                  />
+                </svg>
+              </a>
+              <!-- GitHub -->
+              <a
+                href="https://github.com/Eyjay-SB"
+                target="_blank"
+                aria-label="GitHub"
+                class="hover:text-gray-300 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.02c0 4.42 2.865 8.166 6.839 9.49.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.004.07 1.532 1.034 1.532 1.034.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.687-.103-.253-.446-1.27.098-2.646 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.91-1.295 2.748-1.025 2.748-1.025.546 1.376.203 2.393.1 2.646.64.7 1.028 1.594 1.028 2.687 0 3.848-2.338 4.695-4.566 4.942.359.31.678.922.678 1.859 0 1.342-.012 2.424-.012 2.754 0 .269.18.58.688.48A10.019 10.019 0 0022 12.02C22 6.484 17.523 2 12 2z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Description Container -->
+          <div class="max-w-xl text-center lg:text-left">
+            <!-- Full name with stroke animation -->
+            <h2
+              class="animate-on-scroll stroke-text mb-4 text-4xl font-bold tracking-wide select-none"
+              data-text="Adrian Juv Sobrevega"
+            >
+              Adrian Juv Sobrevega
+            </h2>
+            <p
+              class="animate-on-scroll text-white text-lg leading-relaxed mb-6 opacity-0 translate-y-5"
+            >
+              IT graduate and passionate tech enthusiast. I have a strong
+              foundation in programming and problem-solving, and I love
+              exploring new technologies to create practical solutions. I'm
+              eager to grow, collaborate, and make an impact in the tech world.
+            </p>
+
+            <!-- Skills Section -->
+            <div class="mt-8">
+              <h3
+                class="animate-on-scroll text-2xl font-bold text-red-500 mb-6 text-center lg:text-left"
+              >
+                Tech Stack
+              </h3>
+              <div class="flex flex-wrap justify-center lg:justify-start gap-6">
+                <!-- Laravel -->
+                <div
+                  class="animate-on-scroll relative flex flex-col items-center space-y-2 transform transition duration-300 ease-in-out hover:scale-125 hover:rotate-2 hover:shadow-[0_8px_25px_rgba(255,0,0,0.4)] group cursor-pointer"
+                >
+                  <img
+                    src="https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg"
+                    alt="Laravel"
+                    class="h-10 w-10"
+                  />
+                  <!-- Tooltip -->
+                  <div
+                    class="absolute bottom-full mb-2 hidden group-hover:block bg-red-500 text-white text-xs rounded px-2 py-1 whitespace-nowrap shadow-lg z-10"
+                  >
+                    Laravel
+                    <div
+                      class="absolute top-full left-1/2 transform -translate-x-1/2 w-3 h-3 bg-red-500 rotate-45"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- React -->
+                <div
+                  class="animate-on-scroll relative flex flex-col items-center space-y-2 transform transition duration-300 ease-in-out hover:scale-125 hover:rotate-2 hover:shadow-[0_8px_25px_rgba(255,0,0,0.4)] group cursor-pointer"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt="React"
+                    class="h-10 w-10"
+                  />
+                  <div
+                    class="absolute bottom-full mb-2 hidden group-hover:block bg-red-500 text-white text-xs rounded px-2 py-1 whitespace-nowrap shadow-lg z-10"
+                  >
+                    React
+                    <div
+                      class="absolute top-full left-1/2 transform -translate-x-1/2 w-3 h-3 bg-red-500 rotate-45"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div
+                  class="animate-on-scroll relative flex flex-col items-center space-y-2 transform transition duration-300 ease-in-out hover:scale-125 hover:rotate-2 hover:shadow-[0_8px_25px_rgba(255,0,0,0.4)] group cursor-pointer"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript"
+                    class="h-10 w-10"
+                  />
+                  <div
+                    class="absolute bottom-full mb-2 hidden group-hover:block bg-red-500 text-white text-xs rounded px-2 py-1 whitespace-nowrap shadow-lg z-10"
+                  >
+                    JavaScript
+                    <div
+                      class="animate-on-scroll absolute top-full left-1/2 transform -translate-x-1/2 w-3 h-3 bg-red-500 rotate-45"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- HTML -->
+                <div
+                  class="animate-on-scroll relative flex flex-col items-center space-y-2 transform transition duration-300 ease-in-out hover:scale-125 hover:rotate-2 hover:shadow-[0_8px_25px_rgba(255,0,0,0.4)] group cursor-pointer"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="HTML5"
+                    class="h-10 w-10"
+                  />
+                  <div
+                    class="absolute bottom-full mb-2 hidden group-hover:block bg-red-500 text-white text-xs rounded px-2 py-1 whitespace-nowrap shadow-lg z-10"
+                  >
+                    HTML5
+                    <div
+                      class="absolute top-full left-1/2 transform -translate-x-1/2 w-3 h-3 bg-red-500 rotate-45"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- CSS -->
+                <div
+                  class="animate-on-scroll relative flex flex-col items-center space-y-2 transform transition duration-300 ease-in-out hover:scale-125 hover:rotate-2 hover:shadow-[0_8px_25px_rgba(255,0,0,0.4)] group cursor-pointer"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="CSS3"
+                    class="h-10 w-10"
+                  />
+                  <div
+                    class="absolute bottom-full mb-2 hidden group-hover:block bg-red-500 text-white text-xs rounded px-2 py-1 whitespace-nowrap shadow-lg z-10"
+                  >
+                    CSS3
+                    <div
+                      class="absolute top-full left-1/2 transform -translate-x-1/2 w-3 h-3 bg-red-500 rotate-45"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- PHP -->
+                <div
+                  class="animate-on-scroll relative flex flex-col items-center space-y-2 transform transition duration-300 ease-in-out hover:scale-125 hover:rotate-2 hover:shadow-[0_8px_25px_rgba(255,0,0,0.4)] group cursor-pointer"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                    alt="PHP"
+                    class="h-10 w-10"
+                  />
+                  <div
+                    class="absolute bottom-full mb-2 hidden group-hover:block bg-red-500 text-white text-xs rounded px-2 py-1 whitespace-nowrap shadow-lg z-10"
+                  >
+                    PHP
+                    <div
+                      class="absolute top-full left-1/2 transform -translate-x-1/2 w-3 h-3 bg-red-500 rotate-45"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- MySQL -->
+                <div
+                  class="animate-on-scroll relative flex flex-col items-center space-y-2 transform transition duration-300 ease-in-out hover:scale-125 hover:rotate-2 hover:shadow-[0_8px_25px_rgba(255,0,0,0.4)] group cursor-pointer"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                    alt="MySQL"
+                    class="h-10 w-10"
+                  />
+                  <div
+                    class="absolute bottom-full mb-2 hidden group-hover:block bg-red-500 text-white text-xs rounded px-2 py-1 whitespace-nowrap shadow-lg z-10"
+                  >
+                    MySQL
+                    <div
+                      class="absolute top-full left-1/2 transform -translate-x-1/2 w-3 h-3 bg-red-500 rotate-45"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Photoshop -->
+                <div
+                  class="animate-on-scroll relative flex flex-col items-center space-y-2 transform transition duration-300 ease-in-out hover:scale-125 hover:rotate-2 hover:shadow-[0_8px_25px_rgba(255,0,0,0.4)] group cursor-pointer"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                    alt="Photoshop"
+                    class="h-10 w-10"
+                  />
+                  <div
+                    class="absolute bottom-full mb-2 hidden group-hover:block bg-red-500 text-white text-xs rounded px-2 py-1 whitespace-nowrap shadow-lg z-10"
+                  >
+                    Photoshop
+                    <div
+                      class="absolute top-full left-1/2 transform -translate-x-1/2 w-3 h-3 bg-red-500 rotate-45"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      x-data="{ activeProject: null }"
+      class="opacity-0 translate-y-6 transition-all duration-700 ease-out will-change-transform will-change-opacity w-11/12 lg:w-3/4 mx-auto pt-20 pb-20 bg-[#1a0000]"
+    >
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2
+          class="animate-on-scroll text-3xl font-bold text-red-500 mb-4 tracking-wide uppercase"
+        >
+          Projects
+        </h2>
+        <p
+          class="animate-on-scroll text-gray-300 text-lg mb-12 max-w-2xl mx-auto"
+        >
+          These are some of the cool things I've built as a solo developer —
+          learning on the fly, debugging like a champ, and sometimes teaming up
+          with AI (yep, even coders need a sidekick) to master tricky syntax.
+          Every line of code is a mix of curiosity, coffee, and creativity — and
+          I had a blast building each one!
+        </p>
+
+        <div
+          class="animate-on-scroll grid md:grid-cols-2 lg:grid-cols-3 gap-10"
+        >
+          <!-- Project Card 1 -->
+          <div
+            @click="activeProject = 1"
+            class="animate-on-scroll cursor-pointer bg-[#330000] rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
+          >
+            <img
+              src="projects_images/practicum_system/1.png"
+              alt="Project One"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3
+                class="animate-on-scroll text-xl font-semibold text-red-300 mb-2"
+              >
+                Practicum Management System
+              </h3>
+              <p class="animate-on-scroll text-gray-300 text-sm">
+                A responsive web app built using PHP,MYSQL with Tailwind CSS for
+                Schools and Institutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div
+            @click="activeProject = 2"
+            class="animate-on-scroll cursor-pointer bg-[#330000] rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
+          >
+            <img
+              src="projects_images/machinery_system/1.png"
+              alt="Project Two"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3
+                class="animate-on-scroll text-xl font-semibold text-red-300 mb-2"
+              >
+                Machinery Booking System
+              </h3>
+              <p class="animate-on-scroll text-gray-300 text-sm">
+                A web app built using PHP,MYSQL with manual CSS for Agriculture
+                Renting local business.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div
+            @click="activeProject = 3"
+            class="animate-on-scroll cursor-pointer bg-[#330000] rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
+          >
+            <img
+              src="projects_images/ordering_system/1.png"
+              alt="Project Three"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3
+                class="animate-on-scroll text-xl font-semibold text-red-300 mb-2"
+              >
+                Ordering with Inventory System
+              </h3>
+              <p class="animate-on-scroll text-gray-300 text-sm">
+                Built with PHP, MySQL, and manual CSS for local business use.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        x-show="activeProject"
+        class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4"
+        x-cloak
+      >
+        <div
+          class="bg-[#1a0000] rounded-lg shadow-lg max-w-3xl w-full overflow-hidden"
+        >
+          <div class="flex justify-end p-2">
+            <button
+              @click="activeProject = null"
+              class="text-gray-300 hover:text-red-500 text-2xl"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="grid md:grid-cols-2 gap-2 p-4">
+            <template x-if="activeProject === 1">
+              <div class="md:col-span-2 flex flex-wrap justify-center gap-4">
+                <img
+                  src="projects_images/practicum_system/1.png"
+                  class="w-full md:w-[48%] rounded-lg"
+                />
+                <img
+                  src="projects_images/practicum_system/2.png"
+                  class="w-full md:w-[48%] rounded-lg"
+                />
+              </div>
+            </template>
+            <template x-if="activeProject === 2">
+              <div class="md:col-span-2 flex flex-wrap justify-center gap-4">
+                <img
+                  src="projects_images/machinery_system/1.png"
+                  class="w-full md:w-[48%] rounded-lg"
+                />
+                <img
+                  src="projects_images/machinery_system/2.png"
+                  class="w-full md:w-[48%] rounded-lg"
+                />
+              </div>
+            </template>
+            <template x-if="activeProject === 3">
+              <div class="md:col-span-2 flex flex-wrap justify-center gap-4">
+                <img
+                  src="projects_images/ordering_system/1.png"
+                  class="w-full md:w-[48%] rounded-lg"
+                />
+                <img
+                  src="projects_images/ordering_system/2.png"
+                  class="w-full md:w-[48%] rounded-lg"
+                />
+              </div>
+            </template>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="opacity-0 translate-y-6 transition-all duration-700 ease-out will-change-transform will-change-opacity w-11/12 lg:w-3/4 mx-auto pt-20 pb-20 bg-[#330000]"
+    >
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <h2
+          class="animate-on-scroll text-3xl md:text-4xl font-bold text-red-800 mb-4"
+        >
+          Contact
+        </h2>
+        <p class="animate-on-scroll text-gray-400 mb-8 text-base md:text-lg">
+          Got a project in mind? Don’t hesitate to reach out to me using the
+          contact details below!
+        </p>
+
+        <div
+          class="animate-on-scroll relative flex items-center justify-center bg-[#330000] px-4 py-3 rounded-md shadow-md transform transition duration-300 ease-in-out hover:scale-125 hover:rotate-2 hover:shadow-[0_8px_25px_rgba(255,0,0,0.4)] group cursor-pointer w-fit mx-auto"
+        >
+          <a
+            href="mailto:adrianjuv.personal@gmail.com"
+            class="animate-on-scroll block relative z-10"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 sm:h-10 sm:w-10 text-red-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+          </a>
+
+          <div
+            class="animate-on-scroll absolute bottom-full mb-2 hidden group-hover:block bg-red-500 text-white text-xs rounded px-2 py-1 whitespace-nowrap shadow-lg z-10 left-1/2 transform -translate-x-1/2"
+          >
+            Email Me
+            <div
+              class="animate-on-scroll absolute top-full left-1/2 transform -translate-x-1/2 w-3 h-3 bg-red-500 rotate-45"
+            ></div>
+          </div>
+        </div>
+
+        <p
+          class="animate-on-scroll text-gray-500 mt-6 italic max-w-sm mx-auto text-sm sm:text-base"
+        >
+          (No spam, just good vibes and exciting projects!)
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="animate-on-scroll w-3/4 mx-auto bg-black py-6 text-center text-sm text-gray-600"
+    >
+      © 2025 Adrian Juv. All rights reserved | built with HTML,Tailwind.
+    </footer>
+  </body>
+</html>
